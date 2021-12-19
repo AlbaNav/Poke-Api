@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;800&display=swap");
+
+body {
+  background-image: url("../images/Pokefondo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  font-size: larger;
+  background-color: #E1E1E1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.container img {
+  size: 200px;
+  margin-top: 40px;
+  padding-top: 5px;
+  padding-bottom: 70px;
+  margin-bottom: 50px;
+}
+
+.container li {
+  padding: 5px;
+  object-fit: fill;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.container ul {
+  background-image: url("../images/Tarjeta_pokemon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+  width: 19.5rem;
+  list-style: none;
+  margin: 20px;
+  border-radius: 12%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: solid 0.1px #212447cc;
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 7px;
+  border-radius: 20px;
+  text-shadow: 3px 3px 2px #3b5ba6;
+  color: rgba(204, 32, 32, 0.836);
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 150px;
+  font-weight: bolder;
+  font-style: oblique;
+  padding: 10px;
+  border-radius: 30px;
+  text-emphasis-color: #1e3875;
+  text-shadow: 10px 10px 5px #3b5ba6;
+  color: #ffcb05;
+  margin-bottom: 200px;
+}
