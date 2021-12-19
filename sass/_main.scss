@@ -1,4 +1,11 @@
-main{
-    background-color: firebrick;
-    color: gainsboro;
+body {
+  background-color: #A1A1A1;
+  background-image: url("../images/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+.container {
+  display: flex;
+  lex-direction: row;
+  flex-wrap: wrap;
 }

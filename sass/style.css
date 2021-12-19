@@ -3,8 +3,19 @@
   padding: 0;
 }
 
-main {
-  background-color: firebrick;
-  color: gainsboro;
+body {
+  background-color: #A1A1A1;
+  background-image: url("../images/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  lex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */
