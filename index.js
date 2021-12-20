@@ -26,3 +26,4 @@ const print = (pokemon) => {
 };
 
 arrayPoke();
+

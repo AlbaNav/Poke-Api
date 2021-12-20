@@ -13,6 +13,31 @@ body {
   background-color: #E1E1E1;
 }
 
+@media (max-width: 810px) {
+  .container {
+    width: 70%;
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 412px) {
+  .container {
+    width: 50%;
+    padding-top: 0;
+
+  }
+}
+@media (max-width: 810px) {
+  header {
+    width: 75%;
+  }
+}
+@media (max-width: 412px) {
+  header {
+    width: 70%;
+  }
+}
+
+
 .container {
   display: flex;
   flex-direction: row;
@@ -20,13 +45,11 @@ body {
   justify-content: space-around;
   margin-right: 40px;
   margin-left: 40px;
+  padding-top: 19rem;
 }
 
-.container img {
-  size: 200px;
-  margin-top: 40px;
-  padding-top: 5px;
-  padding-bottom: 70px;
+.container img {  
+  padding-bottom: 40px;
   margin-bottom: 50px;
 }
 
@@ -41,8 +64,8 @@ body {
   background-image: url("../images/Tarjeta_pokemon.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 31rem;
-  width: 19.5rem;
+  height: 26rem;
+  width: 16rem;
   list-style: none;
   margin: 20px;
   border-radius: 12%;
@@ -56,17 +79,12 @@ h3 {
   padding: 7px;
   border-radius: 20px;
   text-shadow: 3px 3px 2px #3b5ba6;
-  color: rgba(204, 32, 32, 0.836);
+  color: rgba(156, 18, 18, 0.836);
 }
-h1 {
-  text-transform: uppercase;
-  font-size: 150px;
-  font-weight: bolder;
-  font-style: oblique;
-  padding: 10px;
-  border-radius: 30px;
-  text-emphasis-color: #1e3875;
-  text-shadow: 10px 10px 5px #3b5ba6;
-  color: #ffcb05;
-  margin-bottom: 200px;
+
+header{
+  size: 100rem;
+  margin-bottom: 20px;
+    
 }
+
