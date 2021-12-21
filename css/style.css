@@ -1,43 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 * {
   margin: 0;
   padding: 0;
-}
-@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;800&display=swap");
+  font-family: "VT323", monospace;
+ }
 
 body {
   background-image: url("../images/Pokefondo.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #e1e1e1;
   text-align: center;
-  font-size: larger;
-  background-color: #E1E1E1;
+ }
+
+.busca {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 10px;
+  font-size: 40px;
 }
 
-@media (max-width: 810px) {
-  .container {
-    width: 70%;
-    padding-top: 5rem;
-  }
+.input {
+  height: 3rem;
+  width: 10rem;
+  margin: 10px;
+  border: solid black;
+  font-size: 19px;
 }
-@media (max-width: 412px) {
-  .container {
-    width: 50%;
-    padding-top: 0;
-
-  }
+.input input {
+  width: 97%;
+  height: 92%;
+  font-size: 20px;
 }
-@media (max-width: 810px) {
-  header {
-    width: 75%;
-  }
-}
-@media (max-width: 412px) {
-  header {
-    width: 70%;
-  }
-}
-
-
 .container {
   display: flex;
   flex-direction: row;
@@ -48,7 +43,7 @@ body {
   padding-top: 19rem;
 }
 
-.container img {  
+.container img {
   padding-bottom: 40px;
   margin-bottom: 50px;
 }
@@ -57,7 +52,7 @@ body {
   padding: 5px;
   object-fit: fill;
   font-size: medium;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .container ul {
@@ -73,18 +68,19 @@ body {
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: solid 0.1px #212447cc;
 }
+
 h3 {
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 25px;
   padding: 7px;
   border-radius: 20px;
-  text-shadow: 3px 3px 2px #3b5ba6;
+  text-shadow: 3px 3px 2px #3546AE;
   color: rgba(156, 18, 18, 0.836);
 }
-
-header{
-  size: 100rem;
-  margin-bottom: 20px;
-    
+footer {
+  background-color: #ff0000;
+  text-align: center;
 }
-
+h4 {
+  font-size: larger;
+}

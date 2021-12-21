@@ -1,19 +1,30 @@
 const div$$ = document.querySelector(".container");
+const input$$ =document.querySelector("input")
+const allPoke = [] 
 const arrayPoke = () => {
-  const allPoke = [];
-    
-  for (let i = 1; i <= 151; i++) {
+
+    if (allPoke.length ===0) {
+    for (let i = 1; i <= 151; i++) {
     const baseDatos =  `https://pokeapi.co/api/v2/pokemon/${i}`;
     allPoke.push(fetch(baseDatos).then((res) => res.json()));
-  }
+    
+  }}
 
   Promise.all(allPoke).then((results) => {
-    print(results);
+    const filteredCharacters = results.filter((poke) =>
+    poke.name.toLowerCase().includes(input$$.value.toLowerCase())||
+    poke.id==(input$$.value));
+    print(filteredCharacters);
+  
+    
+    
   });
+  
 };
 
-const print = (pokemon) => {
-  for (const poke of pokemon) {
+const print = (allPoke) => { 
+    div$$.innerHTML="";
+    for (const poke of allPoke) {
     const ul$$ = document.createElement("ul");
     ul$$.innerHTML =`<li><h3 id="contenido"> name: ${poke.name}</h3></li>
          <li><img id="contenido" src="${poke.sprites["front_default"]}"/></li>
@@ -22,8 +33,13 @@ const print = (pokemon) => {
          <li>Height: ${poke.height / 10} M</li>
          <li>Weight: ${poke.weight / 10} KG</p></li>`
     div$$.appendChild(ul$$);
+
+
+
   }
 };
 
+
 arrayPoke();
 
+input$$.addEventListener("input",arrayPoke);
