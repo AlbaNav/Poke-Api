@@ -4,9 +4,9 @@
   padding: 0;
   font-family: "VT323", monospace;
 }
-@media only screen and (max-width: 700px) {
-  h1 img{ 
-    width: 50%;
+@media only screen and (max-width: 1000px) {
+  img{ 
+    width: 60%;
   }
 .input{
   width:50%;
@@ -28,6 +28,11 @@ body {
   justify-content: left;
   margin: 10px;
   font-size: 40px;
+}
+@media only screen and (max-width: 702px) {
+  .busca {
+    font-size: 110%;
+  }
 }
 
 .input {
@@ -51,10 +56,21 @@ body {
   margin-left: 40px;
   padding-top: 19rem;
 }
+@media only screen and (max-width: 702px) {
+  .container {
+    font-size: 90%;
+    padding-top: 0%;
+  }
+}
 
 .container img {
   padding-bottom: 40px;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 993px) {
+  .container img {
+    margin-bottom: 10px;
+  }
 }
 
 .container li {
@@ -62,6 +78,12 @@ body {
   object-fit: fill;
   font-size: medium;
   font-weight: bolder;
+}
+@media only screen and (max-width: 402px) {
+  .container li {
+    size: 70%;
+    padding: 0%;
+      }
 }
 
 .container ul {
@@ -77,6 +99,7 @@ body {
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: solid 0.1px #212447cc;
 }
+
 
 h3 {
   text-transform: uppercase;
